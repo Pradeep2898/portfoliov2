@@ -1,0 +1,25 @@
+.about::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 1.8rem;
+  margin-right: 18rem;
+  height: 1px;
+  background-color: slateblue;
+}
+p > a {
+  display: inline-block;
+}
+p > a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  position: relative;
+  height: 1px;
+  bottom: 0.3rem;
+  background: #9d174d;
+  transition: width 0.3s;
+}
+p > a:hover::after {
+  width: 100%;
+}

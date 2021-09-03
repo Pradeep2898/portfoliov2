@@ -1,0 +1,46 @@
+h3.project:before,
+h3.project:after {
+  background-color: slateblue;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.project {
+  font-family: "Syne Mono";
+}
+h3.project:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h3.project:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.crap img {
+  display: block;
+}
+.crap {
+  position: relative;
+  display: inline-block;
+}
+.crap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(rgba(80, 1, 54, 0.5), rgba(80, 1, 54, 0.5));
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.crap:hover::after {
+  opacity: 0;
+}
+.sub {
+  font-family: "Syne Mono";
+}
