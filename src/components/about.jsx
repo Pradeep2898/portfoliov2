@@ -1,18 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/output.css";
 import "./about.css";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
 import { SiQuora } from "react-icons/si";
 import AOS from "aos";
+import firebase from "../firebase";
 
 export default function About() {
   //component name should be start with caps [dude WTF!]
+
+  const [About, setAbout] = useState([]);
+  const [Experience, setExperience] = useState([]);
+  const [Project, setProject] = useState([]);
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
     });
   }, []);
+
+  const fetchAbout = async () => {
+    const response = firebase.collection("AboutUs");
+    const data = await response.get();
+    data.docs.forEach(item => {
+      setAbout([...About, item.data()]);
+    });
+  };
+  
   return (
     <div className="bg-gray-900">
       <div
@@ -29,7 +43,7 @@ export default function About() {
         </a>
       </div>
       <li
-        className="flex flex-col share space-y-10"
+        className="flex flex-col share space-y-10 z-10"
         data-aos="fade-right"
         data-aos-delay="1000"
         data-aos-duration="1000"
@@ -45,7 +59,7 @@ export default function About() {
           <GrLinkedin className="mx-auto scale-125 transform hover:text-blue-700 transition ease-in-out duration-300" />
         </a>
       </li>
-      <div className="flex px-48 flex-wrap">
+      <div className="flex px-48 ">
         <div className="w-9/12 pt-32 pb-10">
           <h2
             className="text-2xl text-pink-600 intro"
@@ -75,7 +89,7 @@ export default function About() {
             data-aos-anchor-placement="top-bottom"
           />
           <button
-            className="my-28 px-6 py-4 transition ease-in duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
+            className="my-28 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"

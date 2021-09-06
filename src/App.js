@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <About />
       <Skills />
-      <Experience/>
+      <Experience />
       <Project />
       <Contact />
     </main>
