@@ -1,16 +1,16 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import firebase from "firebase/app";
+import "firebase/firestore";
 
 const config = {
-    apiKey: "AIzaSyDEIkOY3twyheTBlfK6mcIsUWdd_ptV15s",
-    authDomain: "howdy-2898.firebaseapp.com",
-    databaseURL: "https://howdy-2898.firebaseio.com",
-    projectId: "howdy-2898",
-    storageBucket: "howdy-2898.appspot.com",
-    messagingSenderId: "330968575240",
-    appId: "1:330968575240:web:333dc3277fe5838f86d0bd"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(config);
+  apiKey: "AIzaSyB1KZcaNVomsfXbUKbjtJtxLAKd2Dh5-rk",
+  authDomain: "portfolio-7c025.firebaseapp.com",
+  databaseURL: "https://portfolio-7c025.firebaseio.com",
+  projectId: "portfolio-7c025",
+  storageBucket: "portfolio-7c025.appspot.com",
+  messagingSenderId: "301122826477",
+  appId: "1:301122826477:web:2b974c70023fe0d3d79ce4",
+};
+// Initialize Firebase
+firebase.initializeApp(config);
 
-  export default firebase.firestore();
+export default firebase.firestore();

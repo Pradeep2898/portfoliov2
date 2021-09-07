@@ -17,16 +17,24 @@ export default function About() {
     AOS.init({
       duration: 2000,
     });
+    fetchAbout();
   }, []);
 
   const fetchAbout = async () => {
-    const response = firebase.collection("AboutUs");
-    const data = await response.get();
-    data.docs.forEach(item => {
-      setAbout([...About, item.data()]);
-    });
+    await firebase
+      .collection("portfolioV2")
+      .doc("about")
+      .get()
+      .then((docs) => {
+        const data = docs.data();
+        console.log(docs.id, data);
+        setAbout([...About, docs.data()]);
+      })
+      .catch((err) => {
+        console.log("Error getting documents", err);
+      });
   };
-  
+
   return (
     <div className="bg-gray-900">
       <div
@@ -88,6 +96,16 @@ export default function About() {
             data-aos-delay="300"
             data-aos-anchor-placement="top-bottom"
           />
+          <div className="text-white">
+            {About &&
+              About.map((About) => {
+                return (
+                  <div className="text-white">
+                    <p>{About.desc}</p>
+                  </div>
+                );
+              })}
+          </div>
           <button
             className="my-28 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
             data-aos="fade-up"
