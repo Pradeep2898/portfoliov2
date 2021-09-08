@@ -27,8 +27,7 @@ export default function About() {
       .get()
       .then((docs) => {
         const data = docs.data();
-        console.log(docs.id, data);
-        setAbout([...About, docs.data()]);
+        setAbout([...About, data]);
       })
       .catch((err) => {
         console.log("Error getting documents", err);
@@ -102,6 +101,7 @@ export default function About() {
                 return (
                   <div className="text-white">
                     <p>{About.desc}</p>
+                    <p dangerouslySetInnerHTML={{__html: About.test}} />
                   </div>
                 );
               })}
