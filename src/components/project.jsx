@@ -142,71 +142,76 @@ export default function Project() {
             {NonFeaturedProject &&
               NonFeaturedProject.map((nfpr) => {
                 return (
-                  <article className="card bg-gray-800 rounded-md transform hover:translate-y-4 hover:shadow-2xl m-4">
-                    <a href={nfpr.link} className="card__link">
-                      {/* Icon */}
-                      <div className="card__icon p-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="48"
-                          height="48"
-                          viewBox="0 0 172 172"
-                          style={{ fill: "#000000" }}
+                  <a
+                    href={nfpr.link}
+                    className="card bg-gray-800 rounded-md transform hover:translate-y-4 hover:shadow-2xl m-4"
+                  >
+                    {/* Icon */}
+                    <div className="card__icon p-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 172 172"
+                        style={{ fill: "#000000" }}
+                      >
+                        <g
+                          fill="none"
+                          fill-rule="nonzero"
+                          stroke="none"
+                          stroke-width="1"
+                          stroke-linecap="butt"
+                          stroke-linejoin="miter"
+                          stroke-miterlimit="10"
+                          stroke-dasharray=""
+                          stroke-dashoffset="0"
+                          font-family="none"
+                          font-weight="none"
+                          font-size="none"
+                          text-anchor="none"
+                          style={{ mixBlendMode: "normal" }}
                         >
-                          <g
-                            fill="none"
-                            fill-rule="nonzero"
-                            stroke="none"
-                            stroke-width="1"
-                            stroke-linecap="butt"
-                            stroke-linejoin="miter"
-                            stroke-miterlimit="10"
-                            stroke-dasharray=""
-                            stroke-dashoffset="0"
-                            font-family="none"
-                            font-weight="none"
-                            font-size="none"
-                            text-anchor="none"
-                            style={{ mixBlendMode: "normal" }}
-                          >
-                            <path d="M0,172v-172h172v172z" fill="none"></path>
-                            <g fill="#c70c5f">
-                              <path
-                                d={
-                                  "" + (nfpr.tag == "Android" ? android : web)
-                                }
-                              ></path>
-                            </g>
+                          <path d="M0,172v-172h172v172z" fill="none"></path>
+                          <g fill="#c70c5f">
+                            <path
+                              d={"" + (nfpr.tag == "Android" ? android : web)}
+                            ></path>
                           </g>
+                        </g>
+                      </svg>
+                    </div>
+
+                    {/* Media  */}
+                    <div className="card__media text-md p-6 text-gray-400">
+                      <p>{nfpr.desc}</p>
+                    </div>
+
+                    {/* Header */}
+                    <div
+                      className="card__header p-3 w-full rounded-md"
+                      style={{ bottom: "0", position: "absolute" }}
+                    >
+                      <h3 className="card__header-title text-white">
+                        {nfpr.title}
+                      </h3>
+                      <p className="card__header-meta text-sm text-purple-700">
+                        {nfpr.tag}
+                      </p>
+                      <div
+                        className="card__header-icon mx-2"
+                        style={{ right: "0" }}
+                      >
+                        <svg viewbox="0 0 28 25">
+                          <path
+                            fill="#d92676"
+                            d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+                          />
                         </svg>
                       </div>
-
-                      {/* Media  */}
-                      <div className="card__media text-md p-3 rounded-md">
-                        <p>{nfpr.desc}</p>
-                      </div>
-
-                      {/* Header */}
-                      <div className="card__header p-3">
-                        <h3 className="card__header-title text-white">
-                          {nfpr.title}
-                        </h3>
-                        <p className="card__header-meta text-sm text-purple-700">
-                          {nfpr.tag}
-                        </p>
-                        <div className="card__header-icon mx-2">
-                          <svg viewbox="0 0 28 25">
-                            <path
-                              fill="#d92676"
-                              d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
+                    </div>
+                  </a>
                 );
               })}
           </div>
