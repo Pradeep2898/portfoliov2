@@ -19,19 +19,12 @@ export default function About() {
 
   return (
     <div className="bg-gray-900">
-      <div
-        data-aos="fade-down"
-        data-aos-delay="1000"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="top-center"
+      <a
+        className="text-pink-600 ver flex space-y-10 hover:text-purple-700"
+        href="mailto:spanand2898@gmail.com"
       >
-        <a
-          className="text-pink-600 ver flex space-y-10 transition ease-in-out duration-500 hover:text-purple-700"
-          href="/"
-        >
-          spanand2898@gmail.com
-        </a>
-      </div>
+        spanand2898@gmail.com
+      </a>
       <li
         className="flex flex-col share space-y-10 z-10"
         data-aos="fade-right"

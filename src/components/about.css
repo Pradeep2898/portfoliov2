@@ -8,13 +8,21 @@ h3.intro::after {
   height: 1px;
   background-color: slateblue;
 }
+@keyframes fadeInScale {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
 .ver {
   writing-mode: vertical-rl;
   font-family: "Syne Mono";
   letter-spacing: 0.2rem;
   position: fixed;
   right: 3%;
-  top: 10%;
+  animation: fadeInScale 2s ease-in-out 500ms;
   transition: margin 400ms ease-in-out;
 }
 .ver::before {
