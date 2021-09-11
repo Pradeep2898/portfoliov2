@@ -3,7 +3,6 @@ import firebase from "../firebase";
 
 export default function Experience() {
   const [Experience, setExperience] = useState([]);
-  let c;
   useEffect(() => {
     fetchExperience();
   }, []);
@@ -64,56 +63,63 @@ export default function Experience() {
                   className="border-2-2 absolute h-full border"
                   style={styleLeft}
                 ></div>
-                {Experience[0] &&
-                  Object.keys(Experience[0]).map((item, index) => (
-                    <div
-                      className={
-                        "flex" +
-                        (index % 2 ? " " : "-row-reverse ") +
-                        (index % 2 ? "right" : "left") +
-                        "-timeline " +
-                        "mb-8 justify-between items-center w-full"
-                      }
-                      data-aos={"fade-" + (index % 2 ? "right" : "left")}
-                      data-aos-duration="1000"
-                      data-aos-anchor-placement="top-center"
-                      key={index}
-                    >
-                      <div className="order-1 w-5/12"></div>
-                      <div className="order-1 w-5/12 px-1 py-4 text-right">
-                        {Experience &&
-                          Experience.map((exp) => {
-                            return (
-                              <div className="text-white">
-                                {
-                                  //Here we loop trough the exp keys
-                                  // Object.keys(exp).map((key) => {
-                                  //   return (
-                                  <div>
-                                    <p className="mb-3 text-base text-purple-500">
-                                      {exp[item].duration}
-                                    </p>
-                                    <h4 className="mb-3 font-bold text-xl">
-                                      {exp[item].designation} @<br />
-                                      <p>
-                                        <a href="" className="text-pink-600">
-                                          {exp[item].organization}
-                                        </a>
+                {
+                  //Here we loop trough the exp items
+                  Experience[0] &&
+                    Object.keys(Experience[0]).map((item, index) => (
+                      <div
+                        className={
+                          "flex" +
+                          (index % 2 ? " " : "-row-reverse ") +
+                          (index % 2 ? "right" : "left") +
+                          "-timeline " +
+                          "mb-8 justify-between items-center w-full"
+                        }
+                        data-aos={"fade-" + (index % 2 ? "right" : "left")}
+                        data-aos-duration="1000"
+                        data-aos-anchor-placement="top-center"
+                        key={index}
+                      >
+                        <div className="order-1 w-5/12"></div>
+                        <div
+                          className={
+                            "order-1 w-5/12 px-1 py-4 text-" +
+                            (index % 2 ? "left" : "right")
+                          }
+                        >
+                          {Experience &&
+                            Experience.map((exp) => {
+                              return (
+                                <div className="text-white">
+                                  {
+                                    // Object.keys(exp).map((key) => {
+                                    //   return (
+                                    <div>
+                                      <p className="mb-3 text-base text-purple-500">
+                                        {exp[item].duration}
                                       </p>
-                                    </h4>
-                                    <p className="text-sm leading-snug text-gray-400 text-opacity-100">
-                                      {exp[item].desc}
-                                    </p>
-                                  </div>
-                                  //   );
-                                  // })
-                                }
-                              </div>
-                            );
-                          })}
+                                      <h4 className="mb-3 font-bold text-xl">
+                                        {exp[item].designation} @<br />
+                                        <p>
+                                          <a href="" className="text-pink-600">
+                                            {exp[item].organization}
+                                          </a>
+                                        </p>
+                                      </h4>
+                                      <p className="text-sm leading-snug text-gray-400 text-opacity-100">
+                                        {exp[item].desc}
+                                      </p>
+                                    </div>
+                                    //   );
+                                    // })
+                                  }
+                                </div>
+                              );
+                            })}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))
+                }
               </div>
             </div>
           </div>

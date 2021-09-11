@@ -26,7 +26,7 @@ export default function About() {
         data-aos-anchor-placement="top-center"
       >
         <a
-          className="text-gray-400 ver flex space-y-10 transition ease-in-out duration-500 hover:text-pink-600"
+          className="text-pink-600 ver flex space-y-10 transition ease-in-out duration-500 hover:text-purple-700"
           href="/"
         >
           spanand2898@gmail.com
