@@ -1,11 +1,15 @@
 import React from "react";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
 import { SiQuora } from "react-icons/si";
+import { Link } from "react-scroll";
 
 export default function Contact() {
   //component name should be start with caps [dude WTF!]
   return (
-    <div id="contact" class="w-full flex items-center justify-center bg-gray-900">
+    <div
+      id="contact"
+      class="w-full flex items-center justify-center bg-gray-900"
+    >
       <div
         class="md:w-2/3 w-full px-4 text-white flex flex-col py-8"
         data-aos="fade-up"
@@ -32,16 +36,34 @@ export default function Contact() {
         </div>
         <div class="flex flex-col">
           <div class="flex mt-24 mb-12 flex-row justify-between">
-            <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase">
+            <Link
+              to="about"
+              smooth={true}
+              offset={-50}
+              duration={500}
+              class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase"
+            >
               About
-            </a>
-            <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase">
+            </Link>
+            <Link
+              to="experience"
+              smooth={true}
+              offset={-50}
+              duration={500}
+              class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase"
+            >
               Experience
-            </a>
-            <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase">
+            </Link>
+            <Link
+              to="project"
+              smooth={true}
+              offset={-50}
+              duration={500}
+              class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase"
+            >
               Project
-            </a>
-            <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase">
+            </Link>
+            <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase" href="/#">
               Home
             </a>
             <div class="flex flex-row space-x-8 items-center justify-between">
