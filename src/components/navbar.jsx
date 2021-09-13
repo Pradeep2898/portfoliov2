@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/output.css";
 import logo from "../assets/noun_Dragonfly.svg";
+import $ from 'jquery';
 
 export default function Navbar() {
   //component name should be start with caps [dude WTF!]
@@ -24,7 +25,7 @@ export default function Navbar() {
                     data-aos="fade-down"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-center"
-                    href="/#"
+                    href="#about"
                   >
                     About
                   </a>
