@@ -56,7 +56,7 @@ export default function Project() {
   };
 
   return (
-    <div className="bg-gray-900">
+    <div id="project" className="bg-gray-900">
       <div
         className="px-48 py-24"
         data-aos="fade-up"

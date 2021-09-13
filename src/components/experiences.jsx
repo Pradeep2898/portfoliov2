@@ -33,7 +33,7 @@ export default function Experience() {
     borderRadius: "1%",
   };
   return (
-    <div className="bg-gray-900">
+    <div id="experience" className="bg-gray-900">
       <div className="py-20 px-48">
         <div className="container mx-auto flex flex-col items-start md:flex-row my-12">
           <div

@@ -25,7 +25,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="bg-gray-900">
+    <div id="about" className="bg-gray-900">
       <div className="px-48 py-12">
         <div className="flex space-x-24">
           <div

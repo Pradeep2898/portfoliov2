@@ -4,12 +4,9 @@ import "./about.css";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
 import { SiQuora } from "react-icons/si";
 import AOS from "aos";
-import firebase from "../firebase";
 
 export default function About() {
   //component name should be start with caps [dude WTF!]
-
-  const [Project, setProject] = useState([]);
 
   useEffect(() => {
     AOS.init({

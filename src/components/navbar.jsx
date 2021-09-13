@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/output.css";
 import logo from "../assets/noun_Dragonfly.svg";
-import $ from 'jquery';
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   //component name should be start with caps [dude WTF!]
@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             <div className="w-full justify-between flex items-center">
-              <a className="flex-shrink-0" href="/">
+              <a className="flex-shrink-0" href="/#">
                 <img
                   className="h-20 w-20 mt-4"
                   src={logo}
@@ -20,45 +20,61 @@ export default function Navbar() {
               </a>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    className="text-gray-300 hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
+                  <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    className="text-gray-300 cursor-pointer hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
                     data-aos="fade-down"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-center"
-                    href="#about"
                   >
                     About
-                  </a>
-                  <a
-                    className="text-gray-300 hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
+                  </Link>
+                  <Link
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    className="text-gray-300 cursor-pointer hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
                     data-aos="fade-down"
                     data-aos-delay="100"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-center"
-                    href="/#"
                   >
                     Experience
-                  </a>
-                  <a
-                    className="text-gray-300  hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
+                  </Link>
+                  <Link
+                    to="project"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    className="text-gray-300 cursor-pointer hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
                     data-aos="fade-down"
                     data-aos-delay="200"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-center"
-                    href="/#"
                   >
                     Project
-                  </a>
-                  <a
-                    className="text-gray-300  hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
+                  </Link>
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    className="text-gray-300 cursor-pointer hover:text-pink-600 dark:hover:text-white px-3 py-2 text-sm font-medium duration-300"
                     data-aos="fade-down"
                     data-aos-delay="300"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-center"
-                    href="/#"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -83,30 +99,46 @@ export default function Navbar() {
         </div>
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
               className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
-              href="/#"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
               className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
-              href="/#"
             >
               Experience
-            </a>
-            <a
+            </Link>
+            <Link
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
               className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
-              href="/#"
             >
               Project
-            </a>
-            <a
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
               className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
-              href="/#"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -5,7 +5,7 @@ import { SiQuora } from "react-icons/si";
 export default function Contact() {
   //component name should be start with caps [dude WTF!]
   return (
-    <div class="w-full flex items-center justify-center bg-gray-900">
+    <div id="contact" class="w-full flex items-center justify-center bg-gray-900">
       <div
         class="md:w-2/3 w-full px-4 text-white flex flex-col py-8"
         data-aos="fade-up"
