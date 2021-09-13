@@ -11,7 +11,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-24">
             <div className="w-full justify-between flex items-center">
-              <a className="flex-shrink-0" href="/#">
+              <a
+                className="flex-shrink-0"
+                href="/#"
+                data-aos="fade-right"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
                 <img
                   className="h-20 w-20 mt-4"
                   src={logo}
@@ -22,7 +28,6 @@ export default function Navbar() {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link
                     to="about"
-                    spy={true}
                     smooth={true}
                     offset={-50}
                     duration={500}
@@ -35,7 +40,6 @@ export default function Navbar() {
                   </Link>
                   <Link
                     to="experience"
-                    spy={true}
                     smooth={true}
                     offset={-50}
                     duration={500}
@@ -49,7 +53,6 @@ export default function Navbar() {
                   </Link>
                   <Link
                     to="project"
-                    spy={true}
                     smooth={true}
                     offset={-50}
                     duration={500}
@@ -57,13 +60,11 @@ export default function Navbar() {
                     data-aos="fade-down"
                     data-aos-delay="200"
                     data-aos-duration="1000"
-                    data-aos-anchor-placement="top-center"
                   >
                     Project
                   </Link>
                   <Link
                     to="contact"
-                    spy={true}
                     smooth={true}
                     offset={-50}
                     duration={500}
@@ -101,7 +102,6 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="about"
-              spy={true}
               smooth={true}
               offset={-50}
               duration={500}
@@ -111,7 +111,6 @@ export default function Navbar() {
             </Link>
             <Link
               to="experience"
-              spy={true}
               smooth={true}
               offset={-50}
               duration={500}
@@ -121,7 +120,6 @@ export default function Navbar() {
             </Link>
             <Link
               to="project"
-              spy={true}
               smooth={true}
               offset={-50}
               duration={500}
@@ -131,7 +129,6 @@ export default function Navbar() {
             </Link>
             <Link
               to="contact"
-              spy={true}
               smooth={true}
               offset={-50}
               duration={500}
