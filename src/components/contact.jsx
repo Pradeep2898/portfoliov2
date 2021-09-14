@@ -28,7 +28,7 @@ export default function Contact() {
           <div class="w-44 pt-6 md:pt-0">
             <a
               class="bg-pink-800 transition ease-in-out hover:bg-purple-800 transform hover:scale-95 duration-300 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center"
-              href="/"
+              href="mailto:spanand2898@gmail.com"
             >
               Howdy👋
             </a>
@@ -67,13 +67,13 @@ export default function Contact() {
               Home
             </a>
             <div class="flex flex-row space-x-8 items-center justify-between">
-              <a href="/">
+              <a href="https://github.com/Pradeep2898">
                 <GrGithub className="mx-auto scale-125 transform hover:scale-150 transition ease-in-out duration-200" />
               </a>
-              <a href="/">
+              <a href="https://www.quora.com/profile/Pradeep-Anand-9">
                 <SiQuora className="mx-auto scale-125 transform hover:scale-150 transition ease-in-out duration-200" />
               </a>
-              <a href="/">
+              <a href="https://www.linkedin.com/in/pradeep-anand-375865157/">
                 <GrLinkedin className="mx-auto scale-125 transform hover:scale-150 transition ease-in-out duration-200" />
               </a>
             </div>

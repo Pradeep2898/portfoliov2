@@ -29,13 +29,13 @@ export default function About() {
         data-aos-duration="1000"
         data-aos-anchor-placement="top-center"
       >
-        <a href="/">
+        <a href="https://github.com/Pradeep2898">
           <GrGithub className="mx-auto scale-125 transform hover:text-yellow-700 transition ease-in-out duration-300" />
         </a>
-        <a href="/">
+        <a href="https://www.quora.com/profile/Pradeep-Anand-9">
           <SiQuora className="mx-auto scale-125 transform hover:text-red-700 transition ease-in-out duration-300" />
         </a>
-        <a href="/">
+        <a href="https://www.linkedin.com/in/pradeep-anand-375865157/">
           <GrLinkedin className="mx-auto scale-125 transform hover:text-blue-700 transition ease-in-out duration-300" />
         </a>
       </li>
@@ -68,15 +68,17 @@ export default function About() {
             data-aos-delay="300"
             data-aos-anchor-placement="top-bottom"
           />
-          <button
-            className="my-28 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-bottom"
-          >
-            Get In Touch
-          </button>
+          <a href="mailto:spanand2898@gmail.com">
+            <button
+              className="my-28 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Get In Touch
+            </button>
+          </a>
         </div>
         <div
           className="w-3/12 pt-48"
