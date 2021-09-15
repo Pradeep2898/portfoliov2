@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/dragonfly.svg" />
+    <link rel="stylesheet" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Pradeep Anand"
-    />
+    <meta name="description" content="Pradeep Anand" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -23,10 +21,157 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <style>
+      ::-webkit-scrollbar-track {
+        background-color: #111827;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        background-color: #111827;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #c70c5f;
+      }
+      body {
+        background-color: #111827;
+      }
+      .preloader {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      figure {
+        margin: 0;
+        transform: translate(-50%, -50%) rotate(0deg) scale(1.4, 1.4);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 150px;
+        box-sizing: border-box;
+        -webkit-animation: rotation 20s infinite linear;
+        -moz-animation: rotation 20s infinite linear;
+        animation: rotation 20s infinite linear;
+      }
+
+      figure div:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        -webkit-animation: shuffle 2s infinite;
+        -moz-animation: shuffle 2s infinite;
+        animation: shuffle 2s infinite;
+      }
+
+      figure div:nth-child(1) {
+        transform: rotate(0deg);
+      }
+      figure div:nth-child(1):after {
+        animation-delay: -0.5s;
+      }
+      figure div:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      figure div:nth-child(2):after {
+        animation-delay: -1s;
+      }
+      figure div:nth-child(3) {
+        transform: rotate(90deg);
+      }
+      figure div:nth-child(3):after {
+        animation-delay: -1.5s;
+      }
+      figure div:nth-child(4) {
+        transform: rotate(135deg);
+      }
+      figure div:nth-child(4):after {
+        animation-delay: -2s;
+      }
+      figure div:nth-child(5) {
+        transform: rotate(180deg);
+      }
+      figure div:nth-child(5):after {
+        animation-delay: -2.5s;
+      }
+      figure div:nth-child(6) {
+        transform: rotate(225deg);
+      }
+      figure div:nth-child(6):after {
+        animation-delay: -3s;
+      }
+      figure div:nth-child(7) {
+        transform: rotate(270deg);
+      }
+      figure div:nth-child(7):after {
+        animation-delay: -3.5s;
+      }
+      figure div:nth-child(8) {
+        transform: rotate(315deg);
+      }
+      figure div:nth-child(8):after {
+        animation-delay: -4;
+        animation-delay: -4;
+        animation-delay: -4;
+      }
+
+      @-webkit-keyframes rotation {
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg) scale(1.4, 1.4);
+        }
+      }
+      @-webkit-keyframes shuffle {
+        50% {
+          transform: scale(0.4, 0.4) rotate(-90deg);
+          border-radius: 50%;
+        }
+      }
+      @-moz-keyframes rotation {
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg) scale(1.4, 1.4);
+        }
+      }
+      @-moz-keyframes shuffle {
+        50% {
+          transform: scale(0.4, 0.4) rotate(-90deg);
+          border-radius: 50%;
+        }
+      }
+      @keyframes rotation {
+        100% {
+          transform: translate(-50%, -50%) rotate(-360deg) scale(1.4, 1.4);
+        }
+      }
+      @keyframes shuffle {
+        50% {
+          transform: scale(0.4, 0.4) rotate(-90deg);
+          border-radius: 50%;
+        }
+      }
+      .loader-hide {
+        display: none;
+      }
+    </style>
     <title>Pradeep Anand</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="preloader">
+      <figure>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </figure>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
