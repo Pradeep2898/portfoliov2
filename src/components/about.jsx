@@ -39,8 +39,8 @@ export default function About() {
           <GrLinkedin className="mx-auto scale-125 transform hover:text-blue-700 transition ease-in-out duration-300" />
         </a>
       </li>
-      <div className="flex px-48 ">
-        <div className="w-9/12 pt-32 pb-10">
+      <div className="flex flex-wrap overflow-hidden md:px-32 xl:px-48">
+        <div className="lg:w-9/12 overflow-hidden md:w-full pt-32">
           <h2
             className="text-2xl text-pink-600 intro"
             data-aos="fade-up"
@@ -70,7 +70,7 @@ export default function About() {
           />
           <a href="mailto:spanand2898@gmail.com">
             <button
-              className="my-28 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
+              className="my-32 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
@@ -81,17 +81,17 @@ export default function About() {
           </a>
         </div>
         <div
-          className="w-3/12 pt-48"
+          className="lg:w-3/12 overflow-hidden md:w-full lg:pt-48 md:pt-8 md:pb-14"
           data-aos="fade-left"
           data-aos-delay="800"
           data-aos-duration="1000"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor-placement="top-bottom"
         >
           <h3 className="text-sm text-pink-800 font-bold intro">
             Introduction
           </h3>
-          <h4 className="text-4xl py-4">
-            Software Developer by Profession. Web Dev by passion.
+          <h4 className="text-4xl py-4 text-purple-300">
+            Software Developer by Profession. Web Dev by Passion.
           </h4>
           <p>I'm a software engineer from India. I make things for web.</p>
         </div>

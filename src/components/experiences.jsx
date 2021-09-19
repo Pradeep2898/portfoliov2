@@ -40,7 +40,7 @@ export default function Experience() {
             className="flex flex-col w-1/3 sticky mt-8"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <h3 className="text-sm text-pink-800 font-bold intro">
               Experiences
@@ -101,7 +101,10 @@ export default function Experience() {
                                       <h4 className="mb-3 font-bold text-xl">
                                         {exp[item].designation} @<br />
                                         <p>
-                                          <a href="" className="text-pink-600">
+                                          <a
+                                            href={exp[item].site}
+                                            className="text-pink-600"
+                                          >
                                             {exp[item].organization}
                                           </a>
                                         </p>
