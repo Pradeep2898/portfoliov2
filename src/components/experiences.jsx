@@ -34,7 +34,7 @@ export default function Experience() {
   };
   return (
     <div id="experience" className="bg-gray-900">
-      <div className="py-20 px-48">
+      <div className="px-6 md:py-20 md:px-48">
         <div className="container mx-auto flex flex-col items-start md:flex-row my-12">
           <div
             className="flex flex-col w-1/3 sticky mt-8"

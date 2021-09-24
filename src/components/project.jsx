@@ -58,7 +58,7 @@ export default function Project() {
   return (
     <div id="project" className="bg-gray-900">
       <div
-        className="px-48 py-24"
+        className="md:px-48 md:py-24"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-anchor-placement="top-center"
