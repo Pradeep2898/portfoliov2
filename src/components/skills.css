@@ -24,8 +24,8 @@ p > a:hover::after {
   width: 100%;
 }
 .menu__container {
-  width: 25rem;
-  height: 25rem;
+  width: 50vh;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -37,6 +37,13 @@ p > a:hover::after {
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(5deg) rotateZ(-30deg);
   z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  .menu__container{
+    width: 40vh;
+    height: 40vh;
+    margin: 0 20%;
+  }
 }
 .menu__container:hover {
   animation: unset;
