@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import "./experiences.css";
 import firebase from "../firebase";
 
 export default function Experience() {
@@ -56,12 +57,12 @@ export default function Experience() {
             <div className="container mx-auto w-full h-full">
               <div className="relative wrap overflow-hidden h-full">
                 <div
-                  className="border-2-2 absolute h-full border"
-                  style={styleRight}
+                  className="h-full right"
+                  // style={styleRight}
                 ></div>
                 <div
-                  className="border-2-2 absolute h-full border"
-                  style={styleLeft}
+                  className="h-full left"
+                  // style={styleLeft}
                 ></div>
                 {
                   //Here we loop trough the exp items
@@ -80,7 +81,7 @@ export default function Experience() {
                         data-aos-anchor-placement="top-center"
                         key={index}
                       >
-                        <div className="order-1 w-5/12"></div>
+                        <div className={"order-1 w-5/12"}></div>
                         <div
                           className={
                             "order-1 w-5/12 px-1 py-4 text-" +
