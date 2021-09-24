@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   //component name should be start with caps [dude WTF!]
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <div>
       <nav className="bg-gray-900 fixed w-full z-10">
@@ -24,7 +25,11 @@ export default function Navbar() {
                   alt="Pradeep Anand"
                 />
               </a>
-              <div className="hidden sm:block">
+              <div
+                className={
+                  "hidden sm:block" + (navbarOpen ? " flex" : " hidden")
+                }
+              >
                 <div className="ml-10 flex items-baseline space-x-4">
                   <Link
                     to="about"
@@ -83,7 +88,10 @@ export default function Navbar() {
               <div className="ml-4 flex items-center md:ml-6"></div>
             </div>
             <div className="-mr-2 flex sm:hidden">
-              <button className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+              <button
+                className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -98,14 +106,14 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="sm:hidden">
+        <div className={"sm:hidden" + (navbarOpen ? " flex" : " hidden")}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="about"
               smooth={true}
               offset={-50}
               duration={500}
-              className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
             >
               About
             </Link>
@@ -114,7 +122,7 @@ export default function Navbar() {
               smooth={true}
               offset={-50}
               duration={500}
-              className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
             >
               Experience
             </Link>
@@ -123,7 +131,7 @@ export default function Navbar() {
               smooth={true}
               offset={-50}
               duration={500}
-              className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
             >
               Project
             </Link>
@@ -132,7 +140,7 @@ export default function Navbar() {
               smooth={true}
               offset={-50}
               duration={500}
-              className="text-gray-800 dark:text-white block px-3 py-2 text-base font-medium"
+              className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
             >
               Contact
             </Link>

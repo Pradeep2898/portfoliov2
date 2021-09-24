@@ -17,13 +17,13 @@ export default function About() {
   return (
     <div className="bg-gray-900">
       <a
-        className="text-pink-600 ver flex space-y-10 hover:text-purple-700"
+        className="text-pink-600 ver md:flex space-y-10 hover:text-purple-700 hidden"
         href="mailto:spanand2898@gmail.com"
       >
         spanand2898@gmail.com
       </a>
       <li
-        className="flex flex-col share space-y-10 z-10"
+        className="md:flex flex-col share space-y-10 z-10 hidden"
         data-aos="fade-right"
         data-aos-delay="1000"
         data-aos-duration="1000"
@@ -39,7 +39,7 @@ export default function About() {
           <GrLinkedin className="mx-auto scale-125 transform hover:text-blue-700 transition ease-in-out duration-300" />
         </a>
       </li>
-      <div className="flex flex-wrap overflow-hidden md:px-32 xl:px-48">
+      <div className="flex flex-wrap overflow-hidden px-7 sm:px-20 md:px-32 xl:px-48">
         <div className="lg:w-9/12 overflow-hidden md:w-full pt-32">
           <h2
             className="text-2xl text-pink-600 intro"
@@ -52,7 +52,7 @@ export default function About() {
           </h2>
           <br />
           <h1
-            className="text-8xl"
+            className="text-6xl md:text-8xl"
             data-aos="fade-up"
             data-aos-delay="500"
             data-aos-duration="1000"
@@ -70,7 +70,7 @@ export default function About() {
           />
           <a href="mailto:spanand2898@gmail.com">
             <button
-              className="my-32 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
+              className="my-20 md:my-32 px-6 py-4 transition ease-in-out duration-200 uppercase rounded-md hover:bg-pink-800 hover:bg-opacity-30 hover:text-white border-2 border-pink-900 focus:outline-none"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
@@ -81,7 +81,7 @@ export default function About() {
           </a>
         </div>
         <div
-          className="lg:w-3/12 overflow-hidden md:w-full lg:pt-48 md:pt-8 md:pb-14"
+          className="lg:w-3/12 overflow-hidden px-3 md:w-full lg:pt-48 md:pt-8 md:pb-14"
           data-aos="fade-left"
           data-aos-delay="800"
           data-aos-duration="1000"
