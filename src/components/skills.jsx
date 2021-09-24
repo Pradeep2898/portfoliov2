@@ -46,7 +46,7 @@ export default function Skills() {
             </div>
           </div>
           <div
-            className="lg:w-3/5 md:w-full md:pt-12 overflow-hidden text-right"
+            className="lg:w-3/5 md:w-full md:pt-12 overflow-hidden text-right px-4 md:px-0"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-center"
