@@ -87,7 +87,7 @@ export default function Project() {
                       <img
                         className="absolute inset-0 w-full h-full object-cover border-0 rounded-lg"
                         src={fpr.img}
-                        alt="A random image from Unsplash"
+                        alt="Project"
                       />
                     </picture>
                   </a>
@@ -112,10 +112,10 @@ export default function Project() {
                     </p>
                     <p className="mb-2 text-md text-gray-400">{fpr.desc}</p>
                     <p className="text-xs text-gray-400 flex space-x-6 pt-6">
-                      <a href="/">
+                      <a href={fpr.gitlink}>
                         <FiGithub className="mx-auto scale-150 transform hover:text-yellow-700 transition ease-in-out duration-300" />
                       </a>
-                      <a href="/">
+                      <a href={fpr.link}>
                         <BiLinkExternal className="mx-auto scale-150 transform hover:text-blue-700 transition ease-in-out duration-300" />
                       </a>
                     </p>

@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="bg-gray-900">
       <a
-        className="text-pink-600 ver md:flex space-y-10 hover:text-purple-700 hidden"
+        className="text-pink-600 ver md:flex space-y-10 hover:text-purple-700 hidden z-10"
         href="mailto:spanand2898@gmail.com"
       >
         spanand2898@gmail.com
