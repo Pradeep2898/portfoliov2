@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import "./experiences.css";
 import firebase from "../firebase";
 
 export default function Experience() {
@@ -22,23 +21,12 @@ export default function Experience() {
       });
   };
 
-  //in order to use inline style in react
-  const styleRight = {
-    right: "50%",
-    border: "2px solid slateblue",
-    borderRadius: "1%",
-  };
-  const styleLeft = {
-    left: "50%",
-    border: "2px solid slateblue",
-    borderRadius: "1%",
-  };
   return (
     <div id="experience" className="bg-gray-900">
       <div className="px-6 md:py-20 md:px-48">
-        <div className="container mx-auto flex flex-col items-start md:flex-row my-12">
+        <div className="container flex flex-col items-start md:flex-row my-12">
           <div
-            className="flex flex-col w-1/3 sticky mt-8"
+            className="flex flex-col w-1/3 sticky"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
@@ -53,17 +41,9 @@ export default function Experience() {
               In a world, with experiences.
             </p>
           </div>
-          <div className="ml-16 w-2/3 sticky">
-            <div className="container mx-auto w-full h-full">
-              <div className="relative wrap overflow-hidden h-full">
-                <div
-                  className="h-full right"
-                  // style={styleRight}
-                ></div>
-                <div
-                  className="h-full left"
-                  // style={styleLeft}
-                ></div>
+          <div className="w-2/3 sticky mt-8">
+            <div className="w-full h-full">
+              <div className="wrap overflow-hidden h-full">
                 {
                   //Here we loop trough the exp items
                   Experience[0] &&
@@ -81,10 +61,9 @@ export default function Experience() {
                         data-aos-anchor-placement="top-center"
                         key={index}
                       >
-                        <div className={"order-1 w-5/12"}></div>
                         <div
                           className={
-                            "order-1 w-5/12 px-1 py-4 text-" +
+                            "order-1 w-full md:w-9/12 md:ml-40 py-4 text-" +
                             (index % 2 ? "left" : "right")
                           }
                         >
