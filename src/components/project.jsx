@@ -81,7 +81,7 @@ export default function Project() {
                 >
                   <a className="" href={fpr.link} title="Image Link">
                     <picture
-                      className="relative block w-full h-0 pb bg-gray-900 overflow-hidden shadow-lg crap"
+                      className="relative block w-full h-0 pb bg-gray-900 overflow-hidden shadow-lg image"
                       style={{ paddingTop: "75%" }}
                     >
                       <img

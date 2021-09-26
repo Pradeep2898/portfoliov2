@@ -89,7 +89,7 @@ export default function Navbar() {
             </div>
             <div className="-mr-2 flex sm:hidden">
               <button
-                className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+                className="text-pink-800 dark:text-white z-20 hover:text-purple-700 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <svg
@@ -106,8 +106,24 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className={"sm:hidden" + (navbarOpen ? " flex" : " hidden")}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div
+          className={
+            "sm:hidden bg-gray-900 z-10 text-center justify-center" +
+            (navbarOpen ? " flex" : " hidden")
+          }
+          style={{
+            height: "100vh",
+            padding: "50px 10px",
+            width: "min(75vw, 400px)",
+            right: "0",
+            alignItems: "center",
+            position: "fixed",
+            top: "0",
+            bottom: "0",
+            boxShadow: "30px 0 100px 30px #158",
+          }}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-10 sm:px-3">
             <Link
               to="about"
               smooth={true}

@@ -26,7 +26,7 @@ export default function Experience() {
       <div className="px-6 md:py-20 md:px-48">
         <div className="container flex flex-col items-start md:flex-row my-12">
           <div
-            className="flex flex-col w-1/3 sticky"
+            className="flex flex-col md:w-1/3 sticky"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-bottom"
@@ -41,8 +41,8 @@ export default function Experience() {
               In a world, with experiences.
             </p>
           </div>
-          <div className="w-2/3 sticky mt-8">
-            <div className="w-full h-full">
+          <div className="md:w-2/3 sticky mt-8">
+            <div className="h-full">
               <div className="wrap overflow-hidden h-full">
                 {
                   //Here we loop trough the exp items

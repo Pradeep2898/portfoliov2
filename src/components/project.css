@@ -19,14 +19,14 @@ h3.project:after {
   left: 0.5em;
   margin-right: -50%;
 }
-.crap img {
+.image img {
   display: block;
 }
-.crap {
+.image {
   position: relative;
   display: inline-block;
 }
-.crap::after {
+.image::after {
   content: "";
   position: absolute;
   left: 0;
@@ -38,7 +38,7 @@ h3.project:after {
   opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
-.crap:hover::after {
+.image:hover::after {
   opacity: 0;
 }
 .sub {

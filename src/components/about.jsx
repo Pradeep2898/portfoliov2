@@ -81,7 +81,7 @@ export default function About() {
           </a>
         </div>
         <div
-          className="lg:w-3/12 overflow-hidden px-3 md:w-full lg:pt-48 md:pt-8 md:pb-14"
+          className="lg:w-3/12 overflow-hidden md:px-3 md:w-full lg:pt-48 md:pt-8 md:pb-14"
           data-aos="fade-left"
           data-aos-delay="800"
           data-aos-duration="1000"

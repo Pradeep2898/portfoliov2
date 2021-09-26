@@ -11,7 +11,7 @@ export default function Contact() {
       class="w-full flex items-center justify-center bg-gray-900"
     >
       <div
-        class="sm:w-2/3 md:w-2/3 sm:text-center lg:text-left w-full px-4 text-white flex flex-col py-8"
+        class="sm:w-2/3 text-center lg:text-left w-full px-4 text-white flex flex-col py-8"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-anchor-placement="top-bottom"
@@ -25,7 +25,7 @@ export default function Contact() {
             inbox is always open. Whether you have a question or just want to
             say hi, I'll try my best to get back to you!
           </p>
-          <div class="w-44 pt-6 md:pt-0 sm:self-center">
+          <div class="w-44 pt-6 md:pt-0 self-center">
             <a
               class="bg-pink-800 transition ease-in-out hover:bg-purple-800 transform hover:scale-95 duration-300 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center"
               href="mailto:spanand2898@gmail.com"
@@ -66,7 +66,7 @@ export default function Contact() {
             <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white duration-300 uppercase" href="/#">
               Home
             </a>
-            <div class="flex flex-row space-x-8 items-center justify-between">
+            <div class="flex flex-row space-x-8 items-center mt-2 mx-auto md:mx-0">
               <a href="https://github.com/Pradeep2898">
                 <GrGithub className="mx-auto scale-125 transform hover:scale-150 transition ease-in-out duration-200" />
               </a>
