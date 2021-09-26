@@ -89,7 +89,7 @@ export default function Navbar() {
             </div>
             <div className="-mr-2 flex sm:hidden">
               <button
-                className="text-pink-800 dark:text-white z-20 hover:text-purple-700 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+                className="z-20 inline-flex items-center justify-center focus:outline-none"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <svg
