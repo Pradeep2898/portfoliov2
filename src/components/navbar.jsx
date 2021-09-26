@@ -93,6 +93,44 @@ export default function Navbar() {
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 172 172"
+                >
+                  <g
+                    fill="none"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style={{ mixBlendMode: "normal" }}
+                  >
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#d92676">
+                      <path
+                        d={
+                          "" +
+                          (navbarOpen
+                            ? "M33.73372,23.59961l-10.13411,10.13411l52.26628,52.26628l-52.26628,52.26628l10.13411,10.13411l52.26628,-52.26628l52.26628,52.26628l10.13411,-10.13411l-52.26628,-52.26628l52.26628,-52.26628l-10.13411,-10.13411l-52.26628,52.26628z"
+                            : "M10.75,21.5v10.75h139.75v-10.75zM10.75,75.25v10.75h139.75v-10.75zM10.75,129v10.75h139.75v-10.75z")
+                        }
+                      ></path>
+                      {/* <path d="M17.2,40.13333c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843zM17.2,80.26667c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843zM17.2,120.4c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843z"></path> */}
+                    </g>
+                  </g>
+                </svg>
+                {/* <svg
                   width="20"
                   height="20"
                   fill="currentColor"
@@ -101,7 +139,7 @@ export default function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
-                </svg>
+                </svg> */}
               </button>
             </div>
           </div>
@@ -130,6 +168,14 @@ export default function Navbar() {
               offset={-50}
               duration={500}
               className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
+              onClick={() =>
+                setTimeout(
+                  function () {
+                    setNavbarOpen(!navbarOpen);
+                  }.bind(this),
+                  500
+                )
+              }
             >
               About
             </Link>
@@ -139,6 +185,14 @@ export default function Navbar() {
               offset={-50}
               duration={500}
               className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
+              onClick={() =>
+                setTimeout(
+                  function () {
+                    setNavbarOpen(!navbarOpen);
+                  }.bind(this),
+                  500
+                )
+              }
             >
               Experience
             </Link>
@@ -148,6 +202,14 @@ export default function Navbar() {
               offset={-50}
               duration={500}
               className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
+              onClick={() =>
+                setTimeout(
+                  function () {
+                    setNavbarOpen(!navbarOpen);
+                  }.bind(this),
+                  500
+                )
+              }
             >
               Project
             </Link>
@@ -157,6 +219,14 @@ export default function Navbar() {
               offset={-50}
               duration={500}
               className="text-gray-300 cursor-pointer hover:text-pink-600 block px-3 py-2 text-base font-medium"
+              onClick={() =>
+                setTimeout(
+                  function () {
+                    setNavbarOpen(!navbarOpen);
+                  }.bind(this),
+                  500
+                )
+              }
             >
               Contact
             </Link>
