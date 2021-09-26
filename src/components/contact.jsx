@@ -21,9 +21,8 @@ export default function Contact() {
         </div>
         <div class="flex mt-8 flex-col md:flex-row md:justify-between">
           <p class="w-full md:w-2/3 text-gray-400">
-            Although I'm not currently looking for any new opportunities, my
-            inbox is always open. Whether you have a question or just want to
-            say hi, I'll try my best to get back to you!
+            Hey stranger, let's not remain stranger, love to hear more from you. Whether you have a question or just want to
+            say hi, reach me out!
           </p>
           <div class="w-44 pt-6 md:pt-0 self-center">
             <a
@@ -79,9 +78,9 @@ export default function Contact() {
             </div>
           </div>
           <hr class="border-gray-600" />
-          <p class="w-full text-center mt-12 text-pink-600">
+          <a class="w-full text-center mt-12 text-pink-600 hover:text-purple-600" href="https://github.com/Pradeep2898/portfoliov2">
             Copyright © 2021 Pradeep Anand
-          </p>
+          </a>
         </div>
       </div>
     </div>

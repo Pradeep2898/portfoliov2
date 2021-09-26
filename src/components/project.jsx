@@ -111,14 +111,14 @@ export default function Project() {
                       </a>
                     </p>
                     <p className="mb-2 text-md text-gray-400">{fpr.desc}</p>
-                    <p className="text-xs text-gray-400 flex space-x-6 pt-6">
+                    <div className="text-xs text-gray-400 flex space-x-6 pt-6">
                       <a href={fpr.gitlink}>
-                        <FiGithub className="mx-auto scale-150 transform hover:text-yellow-700 transition ease-in-out duration-300" />
+                        <FiGithub className="mx-auto scale-125 transform hover:text-yellow-700 transition ease-in-out duration-300" />
                       </a>
                       <a href={fpr.link}>
                         <BiLinkExternal className="mx-auto scale-150 transform hover:text-blue-700 transition ease-in-out duration-300" />
                       </a>
-                    </p>
+                    </div>
                   </div>
                   <div className="flex flex-wrap justify-around text-sm pt-2 sub">
                     {fpr.topics &&

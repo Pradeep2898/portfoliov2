@@ -26,7 +26,6 @@ export default function Skills() {
 
   return (
     <div id="about" className="bg-gray-900">
-      <div className="">
         <div className="flex flex-wrap overflow-hidden xl:px-48 md:px-32 pb-24 justify-between">
           <div
             data-aos="fade-right"
@@ -46,7 +45,7 @@ export default function Skills() {
             </div>
           </div>
           <div
-            className="lg:w-3/5 md:w-full pt-20 md:pt-12 overflow-hidden text-right px-5 md:px-0"
+            className="lg:w-3/5 md:w-full pt-20 md:pt-4 overflow-hidden text-right px-5 md:px-0"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-anchor-placement="top-center"
@@ -65,6 +64,5 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
