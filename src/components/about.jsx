@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../styles/output.css";
 import "./about.css";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
