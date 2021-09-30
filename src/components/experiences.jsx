@@ -4,22 +4,21 @@ import firebase from "../firebase";
 export default function Experience() {
   const [Experience, setExperience] = useState([]);
   useEffect(() => {
+    const fetchExperience = async () => {
+      await firebase
+        .collection("portfolioV2")
+        .doc("exp")
+        .get()
+        .then((docs) => {
+          const data = docs.data();
+          setExperience([...Experience, data]);
+        })
+        .catch((err) => {
+          console.log("Error getting documents", err);
+        });
+    };
     fetchExperience();
   }, []);
-
-  const fetchExperience = async () => {
-    await firebase
-      .collection("portfolioV2")
-      .doc("exp")
-      .get()
-      .then((docs) => {
-        const data = docs.data();
-        setExperience([...Experience, data]);
-      })
-      .catch((err) => {
-        console.log("Error getting documents", err);
-      });
-  };
 
   return (
     <div id="experience" className="bg-gray-900">

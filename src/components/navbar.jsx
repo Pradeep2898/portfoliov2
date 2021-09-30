@@ -161,7 +161,7 @@ export default function Navbar() {
                 setTimeout(
                   function () {
                     setNavbarOpen(!navbarOpen);
-                  }.bind(this),
+                  }.bind(),
                   500
                 )
               }
@@ -178,7 +178,7 @@ export default function Navbar() {
                 setTimeout(
                   function () {
                     setNavbarOpen(!navbarOpen);
-                  }.bind(this),
+                  }.bind(),
                   500
                 )
               }
@@ -195,7 +195,7 @@ export default function Navbar() {
                 setTimeout(
                   function () {
                     setNavbarOpen(!navbarOpen);
-                  }.bind(this),
+                  }.bind(),
                   500
                 )
               }
@@ -212,7 +212,7 @@ export default function Navbar() {
                 setTimeout(
                   function () {
                     setNavbarOpen(!navbarOpen);
-                  }.bind(this),
+                  }.bind(),
                   500
                 )
               }
