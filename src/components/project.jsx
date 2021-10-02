@@ -101,11 +101,10 @@ export default function Project() {
                   }
                 >
                   <div className="p-4 md:p-8 bg-gray-800 shadow-lg rounded-md">
-                    <p className="mb-2 text-lg leading-none font-medium">
+                    <p className="mb-2 font-bold text-lg">
                       <a
                         className="text-pink-700"
                         href={fpr.link}
-                        title="Heading Link"
                       >
                         {fpr.title}
                       </a>

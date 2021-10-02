@@ -40,7 +40,7 @@ export default function Experience() {
               In a world, with experiences.
             </p>
           </div>
-          <div className="md:w-2/3 sticky mt-8">
+          <div className="md:w-2/3 ml-40 sticky mt-8">
             <div className="h-full">
               <div className="wrap overflow-hidden h-full">
                 {
@@ -53,7 +53,7 @@ export default function Experience() {
                           (index % 2 ? " " : "-row-reverse ") +
                           (index % 2 ? "right" : "left") +
                           "-timeline " +
-                          "mb-8 justify-between items-center w-full"
+                          "mb-8 w-full"
                         }
                         data-aos={"fade-" + (index % 2 ? "right" : "left")}
                         data-aos-duration="1000"
@@ -62,7 +62,7 @@ export default function Experience() {
                       >
                         <div
                           className={
-                            "order-1 w-full md:w-9/12 md:ml-40 py-4 text-" +
+                            "order-1 w-full  left py-4 text-" +
                             (index % 2 ? "left" : "right")
                           }
                         >
