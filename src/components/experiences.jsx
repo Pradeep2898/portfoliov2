@@ -40,7 +40,7 @@ export default function Experience() {
               In a world, with experiences.
             </p>
           </div>
-          <div className="md:w-2/3 ml-40 sticky mt-8">
+          <div className="md:w-2/3 md:ml-40 sticky mt-8">
             <div className="h-full">
               <div className="wrap overflow-hidden h-full">
                 {
@@ -62,7 +62,7 @@ export default function Experience() {
                       >
                         <div
                           className={
-                            "order-1 w-full  left py-4 text-" +
+                            "order-1 w-full left py-4 text-" +
                             (index % 2 ? "left" : "right")
                           }
                         >
