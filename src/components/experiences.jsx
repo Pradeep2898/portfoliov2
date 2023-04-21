@@ -71,8 +71,6 @@ export default function Experience() {
                               return (
                                 <div className="text-white">
                                   {
-                                    // Object.keys(exp).map((key) => {
-                                    //   return (
                                     <div>
                                       <p className="mb-3 text-base text-purple-500">
                                         {exp[item].duration}
@@ -88,13 +86,8 @@ export default function Experience() {
                                           </a>
                                         </p>
                                       </h4>
-{/* <p className="text-sm leading-snug text-gray-400 text-opacity-100">
-                                        {exp[item].desc}
-                                      </p> */}
                                       <p className="text-sm leading-snug text-gray-400 text-opacity-100" dangerouslySetInnerHTML={{ __html: exp[item].desc }} />
                                     </div>
-                                    //   );
-                                    // })
                                   }
                                 </div>
                               );
