@@ -88,9 +88,10 @@ export default function Experience() {
                                           </a>
                                         </p>
                                       </h4>
-                                      <p className="text-sm leading-snug text-gray-400 text-opacity-100">
+{/* <p className="text-sm leading-snug text-gray-400 text-opacity-100">
                                         {exp[item].desc}
-                                      </p>
+                                      </p> */}
+                                      <p className="text-sm leading-snug text-gray-400 text-opacity-100" dangerouslySetInnerHTML={{ __html: exp[item].desc }} />
                                     </div>
                                     //   );
                                     // })
