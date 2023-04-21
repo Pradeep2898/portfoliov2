@@ -93,7 +93,7 @@ export default function About() {
           <h4 className="text-4xl py-4 text-purple-300">
             Software Developer by Profession. Web Dev by Passion.
           </h4>
-          <p>I'm a software engineer from India. I make things for web.</p>
+          <p> I'm a software developer who thrives in creating (and occasionally designing) amazing web experiences. </p>
         </div>
       </div>
     </div>
